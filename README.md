@@ -1,43 +1,127 @@
 # Revolutionizing-Liver-Care-Predicting-Liver-Cirrhosis-Using-Machine-Learning-Techniques
 "This project predicts liver cirrhosis using machine learning. It involves data preprocessing, EDA, model building, and evaluation to assist in early diagnosis and improve patient care."
-# 🧬 Liver Cirrhosis Prediction
 
-A machine learning project that predicts liver cirrhosis using clinical data from patients. It uses a Random Forest classifier and includes preprocessing with a standard scaler.
+Revolutionizing Liver Care: Liver Cirrhosis Prediction
 
----
+📂 Project Description
 
-## 📁 Project Files
+This project aims to develop a machine learning-based web application for predicting liver cirrhosis using patient health data. The system uses a trained Random Forest model to provide predictions that can assist in early diagnosis and better liver care.
 
-- `liver_cirrhosis.csv`: Sample dataset (age, bilirubin, enzymes, proteins, etc.)
-- `rf_acc_68.pkl`: Trained Random Forest model
-- `normalizer.pkl`: Scikit-learn StandardScaler used for feature scaling
-- `requirements.txt`: Python dependencies
-- `Liver_Cirrhosis_Prediction_Report.pdf`: Full project report
-- `README.md`: Project overview and usage instructions
 
 ---
 
-## 🚀 How to Run the Project
+💻 Technologies Used
 
-### 1. Install Dependencies
+Python
 
-```bash
+Flask (Web Framework)
+
+HTML (Frontend Templates)
+
+Pandas, Scikit-learn (Data Processing & Model Building)
+
+Pickle (Model Serialization)
+
+
+
+---
+
+📊 Dataset
+
+File: liver_cirrhosis.csv
+
+Source: [Kaggle Liver Cirrhosis Dataset](provide link if applicable)
+
+The dataset contains patient health parameters used to train the machine learning model for liver cirrhosis prediction.
+
+
+
+---
+
+⚙️ Setup Instructions
+
+1. Clone the Repository
+
+git clone https://github.com/Resham1424/Revolutionizing-Liver-Care-Project.git
+
+2. Navigate to the Project Directory
+
+cd Revolutionizing-Liver-Care-Project
+
+3. Install Dependencies
+
 pip install -r requirements.txt
-import joblib
 
-model = joblib.load("rf_acc_68.pkl")
-scaler = joblib.load("normalizer.pkl")
+4. Run the Application
 
-sample_input = [[45, 1.2, 0.4, 230, 45, 50, 6.5, 3.3, 1.1]]
-scaled = scaler.transform(sample_input)
-prediction = model.predict(scaled)
-print("Prediction:", prediction)
-Target:
+python app.py
 
-1 = Cirrhosis Present
+5. Access the Web Interface
 
-0 = Not Present
+Open your browser and go to:
 
-📄 Report
-See Liver_Cirrhosis_Prediction_Report.pdf for detailed explanation of the project.
+http://127.0.0.1:5000/
+
+
+---
+
+🚀 Project Features
+
+User-friendly web interface to input patient data.
+
+Predicts liver cirrhosis using a Random Forest Classifier.
+
+Displays prediction results on the web page.
+
+Easy to run on a local machine.
+
+
+
+---
+
+🎥 Project Demo
+
+👉 [Watch Video Demo Here](https://github.com/Resham1424/Revolutionizing-Liver-Care-Project/blob/main/Video%20Demo/VID_20250628_071009_432.mp4)
+
+
+---
+
+📈 Model Accuracy
+
+The model achieved an accuracy of 68% on the test dataset using Random Forest Classifier.
+
+
+---
+
+📂 Folder Structure
+
+🔜 Revolutionizing-Liver-Care-Project/
+├── Video Demo
+│   └— VID_20250628_071009_432.mp4
+├── document
+│   └— Liver_Cirrhosis_Prediction_Report
+├── project files
+│   ├— liver_cirrhosis.csv
+│   ├— normalizer.pkl
+│   ├— requirements.txt
+│   └— rf_acc_68.pkl
+├── templates
+│   ├— index.html
+│   └— result.html
+├── app.py
+└— README.md
+
+
+---
+
+👩‍💼 Author
+
+Resham
+GitHub Profile
+
+
+---
+
+
+
 
