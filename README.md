@@ -42,7 +42,7 @@ The dataset contains patient health parameters used to train the machine learnin
 
 1. Clone the Repository
 
-git clone https://github.com/Resham1424/Revolutionizing-Liver-Care-Project.git
+git clone https://github.com/Resham1424/Revolutionizing-Liver-Care-Project
 
 2. Navigate to the Project Directory
 
